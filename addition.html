@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>js ass</title>
+<script Language=JavaScript>
+function addition()
+{
+var a=parseFloat(document.calc.no1.value);
+var b=parseFloat(document.calc.no2.value);
+if(isNaN(a)||isNaN(b))
+	alert("please input number in both textbox");
+else
+	{
+	var c;
+	c=a+b;
+	window.document.calc.ans.value=c;
+	}
+}
+function subtraction()
+{
+var a=parseFloat(document.calc.no1.value);
+var b=parseFloat(document.calc.no2.value);
+if(isNaN(a)||isNaN(b))
+	alert("please input number in both textbox");
+else
+	{
+	var c;
+	c=a-b;
+	window.document.calc.ans.value=c;
+	}
+}
+function multiplication()
+{
+var a=parseFloat(document.calc.no1.value);
+var b=parseFloat(document.calc.no2.value);
+if(isNaN(a)||isNaN(b))
+	alert("please input number in both textbox");
+else
+	{
+	var c;
+	c=a*b;
+	window.document.calc.ans.value=c;
+	}
+}
+function division()
+{
+var a=parseFloat(document.calc.no1.value);
+var b=parseFloat(document.calc.no2.value);
+if(isNaN(a)||isNaN(b))
+	alert("please input number in both textbox");
+else
+	{
+	var c;
+	c=a/b;
+	window.document.calc.ans.value=c;
+	}
+}
+function modulo()
+{
+var a=parseFloat(document.calc.no1.value);
+var b=parseFloat(document.calc.no2.value);
+if(isNaN(a)||isNaN(b))
+	alert("please input number in both textbox");
+else
+	{
+	var c;
+	c=a%b;
+	window.document.calc.ans.value=c;
+	}
+}
+</script>
+</head>
+<body background="addition.png" style="backgroun-repeat:no-repeat;background-size:100% 100%;">
+<form name=calc>
+<h1 align=center><font color=red><b><u>Basic Math</u></b></font></h1><br>
+<table border=2 align=center bgcolor=lightgray>
+<tr>
+<th>
+No1
+</th>
+<td>
+<input type=text name="no1" size=25>
+</td>
+</tr>
+<tr>
+<th>
+No2
+</th>
+<td>
+<input type=text name="nSo2" size=25>
+</td>
+</tr>
+<tr>
+<th colspan=2>
+<input type=button value=Add onClick=addition() name=add>
+<input type=button value=Sub onClick=subtraction() name=sub>
+<input type=button value=Mul onClick=multiplication() name=mul>
+<input type=button value=Div onClick=division() name=div>
+<input type=button value=Mod onClick=modulo() name=mod>
+</th>
+</tr>
+<th>
+Result
+</th>
+<td>
+<input type=text name="ans" size=25>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+

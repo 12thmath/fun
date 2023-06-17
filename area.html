@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Area Of Circle</title>
+<script Language=JavaScript>
+{
+function disp()
+{
+var r=document.frm.r.value;
+var ans=(3.14*r*r);
+document.frm.ans.value=ans;
+}
+}
+</script>
+</head>
+<body background="" style="backgroun-repeat:no-repeat;background-size:100% 100%;">
+<form name=frm>
+<h1 align=center><font color=red><b><u>Area Of Circle</u></b></font></h1><br>
+<table border=2 align=center bgcolor=lightgray>
+<tr><td>Radius Of Circle</td></tr>
+<tr><td><input type=text name=r></td></tr>
+<tr><td>Area Of Circle</td></tr>
+<tr><td><input type=text name=ans></td></tr>
+<tr><td><input type=button onClick=disp() value=Answer></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<title>
+</title>
+<head>
+<script type="text/javascript">
+function si()
+{
+var p,r,n,ans;
+p=parseInt(document.frm.p.value);
+r=parseFloat(document.frm.r.value);
+n=parseInt(document.frm.n.value);
+ans=(p*r*n)/100;
+document.frm.ans.value=ans;
+}
+</script>
+</head>
+<body background="si.png" style="background-repeat:no-repeat;background-size:100% 100%;">
+<form name=frm>
+<center>
+<h1><b><font color=red><u>Simple Interest</u></font></b></h1><br>
+<table bgcolor=lightgray align=center border=2><tr><td>
+Principal Amount:</td></tr><tr><td>
+<input type=text name=p></td></tr><tr><td>
+Rate Of Interest:</td></tr><tr><td>
+<input type=text name=r></td></tr><tr><td>
+Number Of Years:</td></tr><tr><td>
+<input type=text name=n></td></tr><tr><td>
+Simple Interest:</td></tr><tr><td>
+<input type=text name=ans></td></tr><tr><td>
+Click To Get Simple Interest:</td></tr><tr><td>
+
+<input type=button onClick=si() value=Anwser></td></tr>
+</table>
+</center>
+</form>
+</body>

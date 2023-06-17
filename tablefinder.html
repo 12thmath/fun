@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>TABLE FINDER</title>
+<script type="text/javascript">
+function disp()
+{
+var n=document.frm.n.value;
+for(i=0;i<10;i++)
+{
+ans=n*(i+1);
+document.write("<font size=30 color=blue>"+n+"*"+(i+1)+" = "+"<font color=red>"+ans+"<br></font></font>");
+}
+}
+
+</script>
+</head>
+<body background="tablefinder.png"  style="background-repeat:no-repeat;background-size:100% 100%;">
+<form name=frm>
+<h1 align=center><font color=red><b><u>Table Finder</u></b></font></h1><br>
+<table align=center border=2 bgcolor=lightgray><tr><td>Number:</td>
+<td><input type=text name=n ></td></tr><tr><td colspan=2>
+<input type=button onClick=disp() value="Answer" ></td></tr></table>
+
+</form>
+</body>
+</html>
